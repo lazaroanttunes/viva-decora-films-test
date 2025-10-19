@@ -1,4 +1,4 @@
-# 🎬 Cinema App - React Native Challenge
+# 🎬 Viva Decora Filmes - React Native Challenge
 
 <div align="center">
 
@@ -83,12 +83,6 @@ Este projeto foi desenvolvido como parte do processo seletivo para **Desenvolved
 - ✅ **Paginação inteligente** na lista Marvel
 - ✅ **Componentes reutilizáveis** e modulares
 - ✅ **Performance optimizada** com FlatList e memoização
-
-## 📸 Capturas de Tela
-
-| Lista Principal | Promoção Marvel | Detalhes do Filme | Lista Marvel |
-|-----------------|-----------------|-------------------|--------------|
-| Lista de filmes com paginação infinita | Banner promocional a cada 12 filmes | Tela completa de detalhes | Coleção completa do MCU |
 
 ## 🛠️ Configuração e Instalação
 
@@ -258,14 +252,3 @@ export type RootStackParamList = {
 **"Não apenas cumpri os requisitos, mas entreguei uma solução robusta e escalável"**
 
 </div>
-
-## 📄 Notas do Desenvolvedor
-
-Este projeto foi desenvolvido com foco em:
-- **Código limpo** e organização
-- **Arquitetura escalável** 
-- **Experiência do usuário** fluida
-- **Boas práticas** do React Native
-- **Documentação** completa
-
----
