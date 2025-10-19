@@ -1,4 +1,4 @@
-# 🎬 Cinema App - React Native Challenge
+# 🎬 Viva Decora Filmes - React Native
 
 <div align="center">
 
@@ -63,27 +63,6 @@ Este projeto foi desenvolvido como parte do processo seletivo para **Desenvolved
 - **React Native Vector Icons** - Ícones
 - **TMDB API** - Fonte de dados de filmes
 
-## 🚀 Funcionalidades Implementadas
-
-### **Principais (Requisitos do Desafio)**
-- 📜 **Lista infinita** de filmes populares da API TMDB
-- 🦸‍♂️ **Promoção Marvel** customizada a cada 12 filmes
-- 🔍 **Busca integrada** por filmes
-- 📊 **Tela de detalhes** completa com todas as informações
-- 🎨 **Interface moderna** seguindo princípios do Material Design
-
-### **Extras Implementados (Plus)**
-- ✅ **Clean Architecture** com separação clara de responsabilidades
-- ✅ **Injeção de Dependências** manual para melhor testabilidade
-- ✅ **Estados de UI** completos (Loading, Error, Success, Empty)
-- ✅ **Tratamento de erros** com opção de retry
-- ✅ **Navegação type-safe** com TypeScript
-- ✅ **Design system** consistente com cores temáticas
-- ✅ **Tela dedicada Marvel** com lista oficial do MCU
-- ✅ **Paginação inteligente** na lista Marvel
-- ✅ **Componentes reutilizáveis** e modulares
-- ✅ **Performance optimizada** com FlatList e memoização
-
 ## 🛠️ Configuração e Instalação
 
 ### **Pré-requisitos**
@@ -122,119 +101,6 @@ yarn start
 ```
 
 5. **Escaneie o QR code** com o app Expo Go ou execute em emulador
-
-## 🔧 Estrutura do Projeto
-
-```
-cinema-app/
-├── src/
-│   ├── domain/
-│   │   ├── entities/           # Movie, MoviesResponse
-│   │   ├── repositories/       # MovieRepository interface
-│   │   └── usecases/           # GetMovies, SearchMovies, GetMovieDetails
-│   ├── data/
-│   │   ├── datasources/        # TMDBDataSource
-│   │   └── repositories/       # MovieRepositoryImpl
-│   └── presentation/
-│       ├── views/              # MovieList, MovieDetails, MarvelMovies
-│       ├── viewmodels/         # MovieListViewModel
-│       ├── components/         # MovieListItem, SearchBar, MarvelPromotion
-│       └── assets/             # Ícones e imagens
-├── App.tsx                     # Configuração principal
-├── app.json                    # Configuração Expo
-└── package.json               # Dependências
-```
-
-## ⚙️ Configurações Customizáveis
-
-### **Intervalo de Promoção Marvel**
-```typescript
-// No MovieListScreen.tsx
-const PROMOTION_INTERVAL = 12; // Altere conforme necessário
-```
-
-### **Paginação**
-```typescript
-// 20 itens por página da API TMDB
-const response = await getDiscoverMovies(page);
-```
-
-### **Lista Oficial Marvel**
-```typescript
-// IDs oficiais do Universo Cinematográfico Marvel
-const OFFICIAL_MARVEL_MOVIE_IDS = [
-  1726,   // Iron Man
-  24428,  // The Avengers
-  299534, // Avengers: Endgame
-  // ... +30 filmes oficiais
-];
-```
-
-## 🎨 Design System
-
-### **Cores Principais**
-```typescript
-const Colors = {
-  primary: '#e63946',     // Vermelho Marvel
-  dark: '#1a1a2e',        // Azul escuro
-  accent: '#f39c12',      // Laranja/dourado
-  background: '#f8f9fa',  // Fundo claro
-  surface: '#ffffff',     // Superfícies
-}
-```
-
-### **Tipografia**
-- **Títulos**: System Bold
-- **Corpo**: System Regular
-- **Detalhes**: System Light
-
-## 🔮 Funcionalidades em Destaque
-
-### **Sistema de Promoção Inteligente**
-- Exibe filmes Marvel diferentes a cada promoção
-- Carregamento assíncrono para melhor performance
-- Fallback para busca caso IDs específicos falhem
-
-### **Gestão de Estado Avançada**
-```typescript
-// ViewModel com estados completos
-type ViewState = 'loading' | 'error' | 'success' | 'idle';
-const [viewState, setViewState] = useState<ViewState>('idle');
-```
-
-### **Navegação Segura**
-```typescript
-// Type-safe navigation
-export type RootStackParamList = {
-  MovieList: { autoSearch?: string };
-  MovieDetails: { movieId: number };
-  MarvelMovies: undefined;
-};
-```
-
-## 🚀 Como Foi Desenvolvido
-
-### **Abordagem**
-1. **Análise dos requisitos** e definição da arquitetura
-2. **Implementação progressiva** dos 3 objetivos principais
-3. **Refinamento** com funcionalidades extras
-4. **Polimento** da UI/UX e tratamento de erros
-
-### **Decisões Técnicas**
-- **Expo** para desenvolvimento rápido e confiável
-- **TypeScript** para maior segurança e manutenibilidade
-- **Clean Architecture** para código escalável e testável
-- **Componentização** para reutilização e manutenção
-
-## 📈 Próximas Melhorias Possíveis
-
-- [ ] Testes unitários e de integração
-- [ ] Cache offline com AsyncStorage
-- [ ] Animações e microinterações
-- [ ] Busca em tempo real
-- [ ] Favoritos local
-- [ ] Internacionalização (i18n)
-- [ ] Modo escuro
 
 ## 👨‍💻 Desenvolvido por
 
