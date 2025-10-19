@@ -84,12 +84,6 @@ Este projeto foi desenvolvido como parte do processo seletivo para **Desenvolved
 - ✅ **Componentes reutilizáveis** e modulares
 - ✅ **Performance optimizada** com FlatList e memoização
 
-## 📸 Capturas de Tela
-
-| Lista Principal | Promoção Marvel | Detalhes do Filme | Lista Marvel |
-|-----------------|-----------------|-------------------|--------------|
-| Lista de filmes com paginação infinita | Banner promocional a cada 12 filmes | Tela completa de detalhes | Coleção completa do MCU |
-
 ## 🛠️ Configuração e Instalação
 
 ### **Pré-requisitos**
