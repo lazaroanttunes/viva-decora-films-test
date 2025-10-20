@@ -75,8 +75,8 @@ Este projeto foi desenvolvido como parte do processo seletivo para **Desenvolved
 
 1. **Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/cinema-app-challenge.git
-cd cinema-app-challenge
+git clone https://github.com/lazaroanttunes/viva-decora-films-test.git
+cd viva-decora-films-test-challenge
 ```
 
 2. **Instale as dependências**
